@@ -16,7 +16,7 @@ const Form = (props) => {
         e.preventDefault();
         props.setTodos([
             ...props.todos, 
-            {text: props.inputText, completed: false, id: props.id},
+            {text: props.inputText, completed: false, editing: false, id: props.id},
         ]);
         props.setInputText("");
         incremenetId();
